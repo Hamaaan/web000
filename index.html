@@ -6,11 +6,12 @@
     <title>Unity WebGL Player | webmagazine</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.ile = false; //警告文を非表示
+      UnityLoader.SystemInfo.mobile = false; //警告文を非表示
+
       UnityLoader.instantiate("unityContainer", "Build/web000.json");
     </script>
   </head>
   <body>
-    <div id="unityContainer" style="width: 540px; height: 960px; margin: auto"></div>
+    <div id="unityContainer" style="width: 1080px; height: 1920px; margin: auto"></div>
   </body>
 </html>
