@@ -33,17 +33,11 @@
     <title>Unity WebGL Player | webmagazine</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/web000.json");
-      
       //add
       UnityLoader.SystemInfo.mobile = false;
-      var gameInstance = UnityLoader.instantiate(
-        "gameContainer",
-        "Build/xxx.json",
-        { onProgress: UnityProgress }
-      );
       //end
-
+      
+      UnityLoader.instantiate("unityContainer", "Build/web000.json");
     </script>
   </head>
   <body style="
